@@ -5,6 +5,7 @@ class StringCalculator {
         }
         if (numbers.includes(',')) {
             const parts = numbers.split(',');
+            let sum = 0;
             for (const part of parts) {
                 sum += parseInt(part);
             }
