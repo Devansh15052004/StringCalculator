@@ -15,4 +15,9 @@ describe('StringCalculator', () => {
         expect(calculator.add('1')).toBe(1);
         expect(calculator.add('5')).toBe(5);
     });
+
+    test('should return sum for two numbers', () => {
+        expect(calculator.add('1,5')).toBe(6);
+        expect(calculator.add('1,2')).toBe(3);
+    });
 });
