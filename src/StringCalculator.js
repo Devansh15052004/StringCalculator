@@ -15,9 +15,18 @@ class StringCalculator {
         const newLineSupportNumber = numbersString.replace(/\n/g, delimiter);
 
         const parts = newLineSupportNumber.split(delimiter);
+        const negativeNumbers = [];
         let sum = 0;
         for (const part of parts) {
-            sum += parseInt(part);
+            const number = parseInt(part);
+             if (number < 0) {
+                negativeNumbers.push(number);
+            } else {
+                sum += number;
+            }
+        }
+        if (negativeNumbers.length > 0) {
+            throw new Error(`negative numbers not allowed ${negativeNumbers.join(',')}`);
         }
         return sum; 
     }
