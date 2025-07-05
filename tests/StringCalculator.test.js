@@ -35,6 +35,11 @@ describe("StringCalculator", () => {
     expect(calculator.add("//|\n1|2|3|4|5")).toBe(15);
   });
 
+  test("should support simple custom delimiter (no brackets)", () => {
+  expect(calculator.add("//;\n1;2;3")).toBe(6);
+});
+
+
   test("should throw exception for negative numbers", () => {
     expect(() => {
       calculator.add("-1,2,3");

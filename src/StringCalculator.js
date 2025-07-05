@@ -43,7 +43,7 @@ class StringCalculator {
   }
 
   normalizeDelimiters(numbersString, delimiters) {
-    return numbersString; // \n will be handled by RegExp now
+    return numbersString; 
   }
 
   calculateSum(parts) {
@@ -52,8 +52,6 @@ class StringCalculator {
 
     for (const part of parts) {
       const number = parseInt(part);
-      if (isNaN(number)) continue;
-
       if (number < 0) {
         negativeNumbers.push(number);
       } else if (number <= 1000) {
