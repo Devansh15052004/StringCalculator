@@ -37,7 +37,7 @@ class StringCalculator {
             const number = parseInt(part);
             if (number < 0) {
                 negativeNumbers.push(number);
-            } else {
+            } else  {
                 sum += number;
             }
         }
