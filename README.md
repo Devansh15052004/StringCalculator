@@ -76,3 +76,5 @@ npx jest --coverage
 ```bash
 npm test
 ```
+### Screenshot
+![image](https://github.com/user-attachments/assets/a05d0c1a-873b-460a-968d-8ccdf14b451c)
