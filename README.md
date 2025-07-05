@@ -13,7 +13,6 @@ The development follows the "Red-Green-Refactor" cycle to ensure robust, clean c
 - [Features](#features)
 - [Setup Instructions](#setup-instructions)
 - [Running Tests](#running-tests)
-- [Test Coverage](#test-coverage)
 - [Screenshot](#screenshot)
 
 ---
