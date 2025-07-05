@@ -50,4 +50,16 @@ describe("StringCalculator", () => {
   test("ignores numbers > 1000", () => {
     expect(calculator.add("2,1001")).toBe(2);
   });
+
+  test('supports custom delimiters of any length', () => {
+    expect(calculator.add('//[***]\n1***2***3')).toBe(6);
+});
+
+test('supports multiple custom single-char delimiters', () => {
+    expect(calculator.add('//[*][%]\n1*2%3')).toBe(6);
+});
+
+test('supports multiple custom multi-char delimiters', () => {
+    expect(calculator.add('//[**][%%]\n1**2%%3')).toBe(6);
+});
 });
